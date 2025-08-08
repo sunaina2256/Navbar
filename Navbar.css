@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #f4f8fb 0%, #ffffff 100%);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 30px 12px 50px;
+  color: #072433;
+  padding-top: 65px;
+}
+
+nav.navbar {
+  background-color: black;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  width: 100vw;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  justify-content: space-evenly; 
+}
+
+nav.navbar > div, nav.navbar > p {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 8px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+nav.navbar .logo {
+  width: 97px;
+  height: 62px;
+  background-image: url('ibm.webp');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.poster {
+  width: min(1100px, 96%);
+  background: linear-gradient(90deg, #cfe9fb, #eaf6ff);
+  border-radius: 10px;
+  padding: 36px 42px;
+  box-shadow: 0 8px 30px rgba(8,30,40,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.poster h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #0b2330;
+  text-transform: uppercase;
+}
+
+.db2-row {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ibm-bg {
+  background: black;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.ibm-logo {
+  max-width: 150%;
+  max-height: 150%;
+  object-fit: cover;
+}
+
+.db2-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f8f3a;
+  color: #fff;
+  font-weight: 900;
+  width: 120px;
+  height: 60px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 18px rgba(31,143,58,0.18);
+}
+
+.db2-desc {
+  margin-top: 16px;
+  max-width: 760px;
+  text-align: center;
+  color: #123642;
+  line-height: 1.45;
+  font-size: 15px;
+  opacity: 0.95;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sigma-section {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sigma-logo {
+  width: 200px;
+  height: auto;
+}
+
+.sigma-desc {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #123642;
+}
+
+.poster-end {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.poster-end p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #123642;
+  flex: 1;
+  margin: 0 0 10px 0;
+  min-width: 250px;
+}
+
+.poster-end p:first-child {
+  text-align: left;
+}
+
+.poster-end p:last-child {
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  .poster h1 {
+    font-size: 22px;
+  }
+  .ibm-logo {
+    width: 110px;
+  }
+  .db2-badge {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+  .db2-desc {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .poster-end p:last-child {
+    text-align: left;
+  }
+}
